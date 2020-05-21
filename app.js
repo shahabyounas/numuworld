@@ -16,4 +16,8 @@ app.get('/users',  userConroller.getUsers)
 
 app.post('/user', userConroller.addUser)
 
+app.post('/hobby', userConroller.addHobby)
+
+app.delete('/hobby', userConroller.deleteHobby)
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
