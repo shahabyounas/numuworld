@@ -94,7 +94,7 @@ function addUser(req,res){
 }
 
 function getUsers(req,res) {
-    return res.send(users)
+    return res.send({data: users, message: "users data fetched"})
 }
 
 const addHobby = (req, res) => {
